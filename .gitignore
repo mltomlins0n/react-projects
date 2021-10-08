@@ -29,6 +29,3 @@ sketch
 # Ignore all local history of files
 .history
 .ionide
-
-### Others ###
-S03-working-with-components/.eslintcache
