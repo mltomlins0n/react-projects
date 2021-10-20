@@ -13,6 +13,8 @@ const App = () => {
   const addGoalHandler = enteredText => {
     setCourseGoals(prevGoals => {
       const updatedGoals = [...prevGoals];
+      // ERROR: 2 children share the same key - 'goal1'
+      // SOLUTION: use a key that is unique and not hard coded, such as a randomly generated id
       updatedGoals.unshift({ text: enteredText, id: Math.random().toString() });
       return updatedGoals;
     });
@@ -36,6 +38,8 @@ const App = () => {
   }
 
   return (
+    // ERROR: React can't return more then 1 JSX element
+    // SOLUTION: Wrap everything in a single element, such as a div
     <div>
       <section id="goal-form">
         <CourseInput onAddGoal={addGoalHandler} />
