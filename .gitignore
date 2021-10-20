@@ -7,6 +7,7 @@ logs
 
 node_modules
 bower_components
+.eslintcache
 
 *.sublime*
 
@@ -29,4 +30,3 @@ sketch
 # Ignore all local history of files
 .history
 .ionide
-S03-working-with-components/.eslintcache
